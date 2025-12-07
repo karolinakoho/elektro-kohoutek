@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kvalitní elektrikářské služby v Praze a okolí. Rychlé instalace, revize a opravy. Elektro-Kohoutek.">
+    <title>Vítejte | Elektro-Kohoutek</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    
+    <link rel="icon" href="images/Kohout.jpeg" type="image/x-icon">
+</head>
+<body>
+
+    <header id="identifikace">
+        <a href="index.html">
+            <img src="images/Kohout_bez.png" alt="Logo Elektro-Kohoutek - stylizovaný blesk" width="50" height="50">
+            <h1>Elektro-Kohoutek</h1>
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="sluzby.html">Služby</a></li>
+            <li><a href="cenik.html">Ceník & Postup</a></li>
+            <li><a href="reference.html">Reference</a></li>
+            <li><a href="kontakt.html"class="active">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+<main class="layout-dva-sloupce">
+    <section id="hlavni-obsah">
+        <h1>Kontaktujte Elektro-Kohoutek</h1>
+        
+        <p>Ať už potřebujete poradit, objednat revizi, nebo řešíte havarijní situaci, jsme Vám k dispozici. Volejte, nebo nám napište:</p>
+
+        <h2>Kontaktní informace</h2>
+        <ul>
+            <li>Telefon: +420 777 123 456 (dostupné Po-Pá 7:00 – 18:00)</li>
+            <li>Email: info@elektro-kohoutek.cz</li>
+            <li>Adresa kanceláře: U Elektriky 15, 150 00 Praha 5</li>
+        </ul>
+
+        <h2 id="faq">Kontaktní formulář</h2>
+        <form id="kontaktniFormular">
+            <label for="jmeno">Jméno a Příjmení (*):</label>
+            <input type="text" id="jmeno" name="jmeno" required aria-required="true">
+
+            <label for="email">E-mail (*):</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+            
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon">
+
+            <label for="zprava">Vaše zpráva/Popis poptávky:</label>
+            <textarea id="zprava" name="zprava" rows="5"></textarea>
+
+            <button type="submit">Odeslat nezávaznou poptávku</button>
+        </form>
+
+    </section>
+
+    <aside id="bocni-panel">
+        <h2>Kde nás najdete</h2>
+        <p>Rádi Vás přivítáme v naší kanceláři po předchozí domluvě.</p>
+        
+        <p style="font-size: 0.8em; margin-top: 15px;">Doporučujeme vždy nejdříve volat, abychom mohli Váš požadavek řešit co nejrychleji.</p>
+    </aside>
+</main>
+
+    <footer>
+        <p>&copy; 2025 Elektro-Kohoutek</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

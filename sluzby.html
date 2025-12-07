@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kvalitní elektrikářské služby v Praze a okolí. Rychlé instalace, revize a opravy. Elektro-Kohoutek.">
+    <title>Vítejte | Elektro-Kohoutek</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    
+    <link rel="icon" href="images/Kohout.jpeg" type="image/x-icon">
+</head>
+<body>
+
+    <header id="identifikace">
+        <a href="index.html">
+            <img src="images/Kohout_bez.png" alt="Logo Elektro-Kohoutek - stylizovaný blesk" width="50" height="50">
+            <h1>Elektro-Kohoutek</h1>
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="sluzby.html"class="active">Služby</a></li>
+            <li><a href="cenik.html">Ceník & Postup</a></li>
+            <li><a href="reference.html">Reference</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+<main class="layout-dva-sloupce">
+    <section id="hlavni-obsah">
+        <h1>Kompletní portfolio elektrikářských služeb</h1>
+        
+        <p>Ať už potřebujete jednoduchou montáž lustru nebo komplexní instalaci v průmyslovém objektu, jsme připraveni. Zde je přehled našich specializací:</p>
+
+        <h2>1. Elektroinstalace v novostavbách a rekonstrukcích</h2>
+        <ul>
+            <li>Návrh elektroinstalace dle projektu a norem.</li>
+            <li>Montáž kabelových tras a vedení.</li>
+            <li>Kompletní osazení rozvaděčů a jisticích prvků.</li>
+            <li>Instalace datových sítí (LAN) a anténních systémů.</li>
+        </ul>
+
+        <h2>2. Revize a odstraňování závad</h2>
+        <p>Bezpečnost je na prvním místě. Provádíme výchozí, pravidelné i mimořádné revize dle ČSN norem s vystavením revizní zprávy. Rychle lokalizujeme a opravujeme závady na elektroinstalaci.</p>
+        
+        <h2>3. Montáž slaboproudých zařízení</h2>
+        <p>Zabezpečovací systémy (EZS), kamerové systémy (CCTV) a přístupové systémy. Rádi Vám poradíme s řešením pro maximální ochranu Vašeho majetku.</p>
+
+        <hr>
+
+<div id="kalkulator-sekce">
+    <h3>💡 Orientáční Kalkulátor Výkonu (P = U * I)</h3>
+    <p>Pomocí tohoto nástroje si můžete rychle spočítat výkon (W) spotřebiče, pokud znáte jeho proudový odběr (A). Počítáme s napětím 230 V.</p>
+    
+    <label for="proud">Zadejte proud v Ampérech (A):</label>
+    <input type="number" id="proud" value="10" min="0.1" aria-label="Proud v Ampérech">
+    
+    <button onclick="spocitejVykon()">Spočítat výkon</button>
+    
+    <p>Výsledek: <span id="vypoctenyVykon">2300.00 W (Při 10A)</span></p>
+</div>
+
+    </section>
+
+    <aside id="bocni-panel">
+        <h2>Časté dotazy ke službám</h2>
+        <p>Víte, jaký je rozdíl mezi jističem a proudovým chráničem? A kdy je nutná výchozí revize? Vše Vám rádi vysvětlíme.</p>
+        <a href="kontakt.html#faq" class="tlacitko">Máte dotazy? Kontaktujte nás.</a>
+    </aside>
+</main>
+
+<footer>
+        <p>&copy; 2025 Elektro-Kohoutek</p>
+    </footer>
+
+    <script src="js/script.js"></script> 
+</body>
+</html>

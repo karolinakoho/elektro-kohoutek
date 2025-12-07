@@ -1,0 +1,171 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header#identifikace {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+}
+header#identifikace a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    color: #007bff;
+    text-decoration: underline;
+}
+a:hover, a:focus {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid transparent; 
+}
+
+nav ul li a.active {
+    background-color: #ff8c00;
+    color: #333;
+}
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+.layout-dva-sloupce {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+#hlavni-obsah {
+    flex: 3;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#bocni-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    .layout-dva-sloupce {
+        flex-direction: column;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+tfoot td {
+    background-color: #f0f0f0;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.mini-galerie-kontejner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galerie-polozka-mini {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.galerie-polozka-mini img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 8px 5px;
+    font-size: 0.8em;
+    background-color: #f9f9f9;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    
+    text-align: center;
+    
+    width: 100%;
+    margin-top: 30px; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
