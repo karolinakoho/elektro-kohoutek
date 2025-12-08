@@ -169,29 +169,26 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
-/* --- VYLEPŠENÉ STYLY PRO KONTAKTNÍ FORMULÁŘ --- */
+/* KONTAKTNÍ FORMULÁŘ */
 
-/* Základní kontejner a pozadí */
 #kontaktniFormular {
-    display: grid; /* Použijeme CSS Grid/Flex pro lepší kontrolu */
-    gap: 15px; /* Mezera mezi řádky */
+    display: grid;
+    gap: 15px;
     max-width: 600px;
     margin-top: 20px;
     padding: 25px;
-    background-color: #f9f9f9; /* Světlejší pozadí formuláře */
+    background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
 }
 
-/* Nastavení popisků */
 #kontaktniFormular label {
     display: block;
-    font-weight: bold; /* Zvýraznění popisku */
+    font-weight: bold;
     color: #555;
     margin-bottom: 5px;
 }
 
-/* Nastavení vstupních polí a textarea */
 #kontaktniFormular input[type="text"],
 #kontaktniFormular input[type="email"],
 #kontaktniFormular input[type="tel"],
@@ -199,30 +196,27 @@ footer p {
     display: block;
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc; /* Jemný okraj */
+    border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    transition: border-color 0.3s, box-shadow 0.3s; /* Plynulá změna při zaostření */
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Vizuální efekt při zaostření (lepší UX) */
 #kontaktniFormular input:focus,
 #kontaktniFormular textarea:focus {
-    border-color: #ff8c00; /* Oranžový akcent */
+    border-color: #ff8c00;
     box-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
-    outline: none; /* Odstraní výchozí modrý rámeček */
+    outline: none;
 }
 
-/* Nastavení textarea */
 #kontaktniFormular textarea {
-    resize: vertical; /* Povolí pouze vertikální změnu velikosti */
+    resize: vertical;
     min-height: 100px;
 }
 
-/* Stylování tlačítka */
 #kontaktniFormular button {
     display: block;
-    width: 50%; /* Tlačítko na poloviční šířku */
+    width: 50%;
     padding: 12px;
     background-color: #007bff;
     color: white;
